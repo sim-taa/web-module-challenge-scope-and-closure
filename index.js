@@ -28,11 +28,14 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  Answer: Counter one uses closure to create memory within the program. The counter will work to increment.
+  Counter two does not use closure and will return 1 each time.
   2. Which of the two uses a closure? How can you tell?
-  
+   Answer: Counter one uses closure. You can tell because count is defined within the scope of the function.
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+   Answer: counter1 would be preferable if you wanted to continue counting each time the function was called.
+   Counter2 would be preferable if you continually wanted to return 1. The second counter might not have a use case.
 */
 
 // counter1 code
@@ -62,8 +65,8 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+const inning = function() {
+  return Math.floor(Math.random() * Math.floor(3));
 }
 
 
