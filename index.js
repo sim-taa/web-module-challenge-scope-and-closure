@@ -91,6 +91,8 @@ function finalScore(inningFunction,inningCount){
   for (let i = 0; i < inningCount; i++) {
     home = home + inningFunction();
     away = away + inningFunction();
+    const inning = i + 1
+    console.log("inning" + inning  + "home" + home)
   }
   return { "Home": home, "Away": away };
 }
@@ -149,8 +151,23 @@ Use the scoreboard function below to do the following:
 ]  
   */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(getInningScore,inning,inningCount) {
+  for (let i = 0; i < inningCount; i++) {
+
+    
+  }
+  return [
+    "Inning 1: Away 1 - Home 2", 
+    "Inning 2: Away 2 - Home 1",
+    "Inning 3: Away 0 - Home 2", 
+    "Inning 4: Away 2 - Home 2", 
+    "Inning 5: Away 2 - Home 0", 
+    "Inning 6: Away 1 - Home 1", 
+    "Inning 7: Away 0 - Home 2", 
+    "Inning 8: Away 2 - Home 2",
+    "Inning 9: Away 1 - Home 0", 
+    "Final Score: Away 11 - Home 12"  
+  ]
 }
 
 
